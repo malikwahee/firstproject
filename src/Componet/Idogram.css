@@ -1,0 +1,164 @@
+
+.ai-image-gernertor{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    /* margin-top: 80px; */
+    margin-bottom: 20px;
+    gap: 30px;
+
+  }
+
+  .img-loading{
+    display: flex;
+    flex-direction: column;
+  }
+  .image{
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
+    background-image: url('../IMG/one.png');
+    background-size: 450px;
+    animation-name: runtime;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    transition: ease-in-out;
+  
+    /* animation-iteration-count: 30s; */
+  }
+
+  
+@keyframes runtime {
+    0%{    
+      background-image: url('../IMG/one.png');
+    }
+    20%{    
+      background-image: url('../IMG/tow.png');
+    }
+    30%{    
+        background-image: url('../IMG/one.png');
+      }
+    40%{
+      
+      background-image: url('../IMG/three.png');
+    }
+    50%{    
+        background-image: url('../IMG/one.png');
+      }
+    60%{    
+      background-image: url('../IMG/four.png');
+    }
+    70%{    
+        background-image: url('../IMG/one.png');
+      }
+    80%{
+      background-image: url('../IMG/five.png');
+    }
+    90%{    
+        background-image: url('../IMG/one.png');
+      }
+      100%{    
+        background-image: url('../IMG/six.png');
+      }
+  }
+  
+
+  .mainidogram{
+    /* display: flex; */
+    justify-content: space-between;
+    /* align-items: center; */
+  }
+
+  .idogrm{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin-left: -10px;
+    font-weight: 400;
+  }
+  .idogrm span{
+    font-size: 40px;
+    margin-top: 7px;
+    color: #252020;
+    /* color: red; */
+    /* margin-top: 36px; */
+  }
+
+  .idogrmright{
+    font-size: 40px;
+    margin-top: 30px;
+  }
+
+
+
+  .buttonset{
+    width: 400px;
+    height: auto;
+  }
+  .btnset{
+    width: 450px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(22, 20, 20);
+    color: white;
+    font-weight: 300;
+    border-radius: 5px;
+  }
+  .btnset span{
+    font-size: 30px;
+    padding-top: 20px;
+  }
+
+
+
+
+
+
+
+
+
+  .font{
+    font-size: 50%;
+  }
+
+  .mainone{
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .search-box{
+    display: flex;
+    width: 1000px;
+    height: 95px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    background: rgb(51, 1, 49);
+  }
+  .search-input{
+    width: 600px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: white;
+    padding-left: 35px;
+    margin-right: 35px;
+  }
+  .search-input::placeholder{
+    color: #999;
+  }
+  .generate-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 85px;
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: #0864a1;
+    cursor: pointer;
+  }
